@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div.content-container{
+                margin: 5px 50px 5px 50px;
+                background-color: rgb(250,250,250);
+                height: 600px;
+                width: 700px;
+                max-width: 1000px;
+                border-radius: 10px;
+                box-shadow: 0 0 0 0.1 grey;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            }
+            h3{
+                padding-top: 30px;
+                padding-bottom: 10px;
+                font-size: 20px;
+                font-weight: normal;
+                text-align: center;
+                color: rgb(145, 3, 201);
+            }
+            h4{
+                text-align: center;
+                font-size: 16px;
+                font-weight: normal;
+            }
+            
+            div.message{
+                padding: 0px 40px 0px 40px;
+            }
+            div.client{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0px 40px 0px 40px;
+                flex-wrap: wrap;
+            }
+            label{
+                color: #222;
+            }
+            p, h5{
+                color: #777;
+                background-color:rgb(255,255,255);
+                margin-left: 15px;
+                border-radius: 4px;
+            }
+            div.quiz{
+                padding: 0px 40px 0px 40px;
+                margin-bottom: 100px;
+            }
+            div.quiz h4{
+                font-weight: bold;
+            }
+            footer{
+                text-align: center;
+                background-color:rgb(145, 144, 144);
+                width: 100%;
+                height: 50px;
+                position: fixed;
+                left: 56px;
+                bottom: 0px;
+                height: 50px;
+                width: 700px;
+                max-width: 1000px;
+            }
+            footer p{
+                padding-top: 5px;
+                color: white;
+                background-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content-container">
+            <h3>Renouveler - Fale conosco</h3>
+            <h4>Abaixo segue informações sobre o nosso cliente: </h4>
+            <div class="client">
+                <label>Nome:</label>
+                <p>{{name}}</p>
+                <label>Email:</label>
+                <p>{{mail}}</p>
+                <label>Telefone:</label>
+                <p>{{phone}}</p>
+            </div>
+            <div class="message">
+                <label>Mensagem:</label>
+                <h5>{{message}}</h5>
+            </div>
+            <div class="quiz">
+                <h4>Resultado do quiz</h4>
+                <hr>
+                <label>Tag escolhida:</label>
+                <p>{{tag}}</p>
+                <label>Lugar preferido da casa:</label>
+                <p>{{favoritePlace}}</p>
+                <label>Cor preferida:</label>
+                <p>{{color}}</p>
+                <label>Tipo de evento preferido:</label>
+                <p>{{eventStyle}}</p>
+            </div>     
+            <footer>
+                <p>© todos os direitos reservados - Renouveler</p>
+            </footer> 
+        </div>
+    </body>
+</html>

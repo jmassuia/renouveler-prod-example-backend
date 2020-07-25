@@ -1,0 +1,7 @@
+# ignoring image past
+/node_modules
+<<<<<<< HEAD
+.env
+=======
+/env
+>>>>>>> c2a85e6fbdaea52cb327180f3878f28181755a65
