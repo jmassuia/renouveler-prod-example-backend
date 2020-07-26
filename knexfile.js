@@ -1,4 +1,5 @@
 // Update with your config settings.
+require('dotenv').config();
 
 module.exports = {
 
@@ -32,10 +33,10 @@ module.exports = {
   production: {
     client: 'mysql',
     connection: {
-      host:'localhost',
-      user: 'admin_renouveler',
-      password: 'Jvm1110!',
-      database: 'renouveler',
+      host:process.env.HOST,
+      user: process.env.DB_USER,
+      password: process.env.DB_USER_PASSWORD,
+      database: process.env.DB_NAME,
     },
     migrations: {
       directory: './src/database/migrations'
