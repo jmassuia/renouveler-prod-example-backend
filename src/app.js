@@ -6,7 +6,7 @@ const log = console.log;
 const app = express();
 var port = 3333;
 
-app.use(cors());
+app.use(cors({origin:'*'}));
 app.use(express.urlencoded({
     extended: false
 }));
