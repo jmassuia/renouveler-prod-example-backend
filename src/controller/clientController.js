@@ -5,7 +5,7 @@ module.exports={
     async store(req,res){
         const{name,email,phone,fullDate:date,message, tag, color, favoritePlace, eventStyle} = req.body;
 
-        /*
+        
         const [client] = await connection('clients').insert({
             name,
             email,
@@ -14,7 +14,7 @@ module.exports={
         });
 
         console.log(client);
-*/
+
         var mailInfo = {
                 from: "Renouveler - <massuia1507@gmail.com>",
                 to: ['j0a0massuia19@gmail.com','renouveler.design@gmail.com'],
