@@ -5,15 +5,14 @@ module.exports={
     async store(req,res){
         const{name,email,phone,fullDate:date,message, tag, color, favoritePlace, eventStyle} = req.body;
 
-        
+     /*   
         const [client] = await connection('clients').insert({
             name,
             email,
             phone,
             date
-        });
+        });*/
 
-        console.log(client);
 
         var mailInfo = {
                 from: "Renouveler - <massuia1507@gmail.com>",
