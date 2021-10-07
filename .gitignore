@@ -1,7 +1,9 @@
 # ignoring image past
 /node_modules
-<<<<<<< HEAD
+
+# Ignore local test files
+/src/controller/viewController.js
+/src/routes/viewRoutes.js
+
+# Ignore environment variables
 .env
-=======
-/env
->>>>>>> c2a85e6fbdaea52cb327180f3878f28181755a65

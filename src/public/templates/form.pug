@@ -1,0 +1,19 @@
+extends base
+
+block content
+    .form
+        .information
+            h3="Informações do cliente"
+            hr
+            .form-item 
+                label="Nome: "
+                p=`${client.name}`
+            .form-item 
+                label="Email: "
+                p=`${client.email}`
+            .form-item 
+                label="Telefone: "
+                p=`${client.phone}`
+            .form-item.message 
+                label="Mensagem: "
+                p=`${client.message}`

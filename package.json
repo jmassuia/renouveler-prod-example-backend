@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.7",
     "corn": "0.0.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -17,10 +18,9 @@
     "knex": "^0.21.1",
     "mongodb": "^3.6.0",
     "mongoose": "^5.9.27",
-    "mysql": "^2.18.1",
     "nodemailer": "^6.4.10",
     "nodemailer-express-handlebars": "^4.0.0",
     "nodemon": "^2.0.4",
-    "sqlite3": "^4.2.0"
+    "pug": "^3.0.2"
   }
 }
